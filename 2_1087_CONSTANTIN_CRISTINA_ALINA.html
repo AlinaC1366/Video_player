@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Pro</title>
+    <link rel="stylesheet" href="2_1087_CONSTANTIN_CRISTINA_ALINA.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <div class="video-section">
+            <video id="videoElement" style="display: none;"></video>
+            <canvas id="videoCanvas"></canvas>
+
+            <div class="effects-bar" style="margin-top: 10px;">
+                <label for="effectSelect">Efect Video:</label>
+                <select id="effectSelect">
+                    <option value="none">Fără efect</option>
+                    <option value="filtru-albastru">Filtru Albastru</option>
+                    <option value="high-contrast">Contrast Ridicat</option>
+                    <option value="filtru-rosu">Filtru Roșu</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="playlist-section" id="dropZone">
+            <h3>Playlist</h3>
+            <input type="file" id="fileInput" multiple accept="video/*">
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+
+    <script src="2_1087_CONSTANTIN_CRISTINA_ALINA.js"></script>
+</body>
+</html>
